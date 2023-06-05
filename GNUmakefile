@@ -1,11 +1,11 @@
-PLUGIN_BINARY=skeleton-device
+PLUGIN_BINARY=rest-proxy-device
 export GO111MODULE=on
 
 default: build
 
 .PHONY: clean
 clean: ## Remove build artifacts
-	rm -rf skeleton-device launcher
+	rm -rf rest-proxy-device launcher
 
 build:
 	go build -o ${PLUGIN_BINARY} .
